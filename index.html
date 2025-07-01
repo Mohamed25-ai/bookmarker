@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark</title>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <main>
+        <header class="d-flex justify-content-center my-5">
+            <h1>Bookmarker</h1>
+        </header>
+        <div class="container">
+            <div class="container my-4 py-4 my-content">
+                <div class="header-caption d-flex justify-content-center align-items-center">
+                    <i class="fa-solid  fa-bookmark "></i>
+                    <h2 class="px-2"> Bookmark your favorite sites </h2>
+                    <i class="fa-solid  fa-bookmark"></i>
+                </div>
+                <div class="mb-3 name-label-input ">
+                    <label for="exampleFormControlInput1" class="form-label labels">
+                        <i class="fa-solid fa-book-bookmark me-1"></i>
+                        Site Name</label>
+                    <div  id="name-error-icon">
+                        <input type="text" class="form-control " id="exampleFormControlInput1" placeholder="Bookmark Name">
+                        <div class="warning-name-container">
+                            <p class="warning-message-name"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 name-label-input ">
+                    <label for="exampleFormControlInput2" class="form-label labels">
+                        <i class="fa-solid fa-link me-1"></i>
+                        Site URL</label>
+                    <div  id="url-error-icon">
+                        <input type="text" class="form-control " id="exampleFormControlInput2" placeholder="Website URL">
+                        <div class="warning-url-container">
+                            <p class="warning-message-name"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" submit-button d-flex justify-content-center py-3" >
+                    <button type="button" onclick="addNewUrl()" class="submit-modal-button btn btn-danger px-5" data-bs-toggle="" data-bs-target="">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- First row -->
+        <div class="">
+            <div class="container bg-white first-row ">
+                <div class="row ">
+                    <div class="col-3  d-flex justify-content-center  ">
+                        <p class=" my-2 first-row-paragraph">Index</p>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center ">
+                        <p class=" my-2 first-row-paragraph">Website Name</p>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center ">
+                        <p class=" my-2 first-row-paragraph">Visit</p>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center ">  
+                        <p class=" my-2 first-row-paragraph">Delete</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fields -->
+        <div class="outer-container" id="urlTable">
+            
+        </div>
+        
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog submit-modal">
+        <div class="modal-content">
+            <div class="modal-header border-0 p-4">
+                <div class="circles d-flex">
+                    <div class="circle-1 mx-1"></div>
+                    <div class="circle-2 mx-1"></div>
+                    <div class="circle-3 mx-1"></div>
+                </div>
+                <button type="button" class="btn-close close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4 pt-0 ">
+                <p>Site Name or Url is not valid, Please follow the rules below : </p>
+                <div class="rule-1 d-flex align-items-center  my-2">
+                    <i class="fa-regular fa-circle-right mx-1"></i>
+                    <p class="mb-1">Site name must contain at least 3 characters</p>
+                </div>
+                <div class="rule-1 d-flex align-items-center">
+                    <i class="fa-regular fa-circle-right mx-1"></i>
+                    <p class="mb-1">Site URL must be a valid one</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

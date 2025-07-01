@@ -1,0 +1,222 @@
+:root{
+    --pt-sans-caption-font:'pt-sans-caption','sans-serif';
+    --pacifico-font:'Pacifico','sans-serif';
+    --righteous-font:'Righteous','sans-serif';
+    --Modal-font:'BreeSerif','sans-serif';
+}
+body{
+    background-color: rgb(247, 236, 222);
+}
+.my-content{
+    border-top: 5px dotted black;
+    border-bottom: 5px dotted black;
+    border-width: 2px;
+}
+.first-row{
+    border-bottom: 1px solid rgb(230, 229, 229);
+}
+header>h1{
+    font-family: var(--pacifico-font);
+    font-size: 50px;
+    /* font-weight: 500; */
+    position: relative;
+    z-index: 555;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    z-index: -5;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color:rgb(254, 194, 96);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+h1:hover::after{
+    height: 40px;
+}
+.header-caption :nth-child(1){
+    color: #3FA55B;
+    font-size: 25px
+}
+/* .header-caption :nth-child(2){
+    color: linear-gradient(to right, #3ca55c, #b5ac49);
+} */
+.header-caption :nth-child(3){
+    color: #B3AC49;
+    font-size: 25px
+}
+.my-content h2{
+    font-family: var(--righteous-font);
+    font-size: 25px;
+    margin-top: 7px;
+    font-weight: 500;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+}
+
+.labels{
+    font-family: var(--pt-sans-caption-font);
+    font-size: 16px;
+    font-weight: 600;
+}
+#exampleFormControlInput1,
+#exampleFormControlInput2
+{
+    font-family: var(--pt-sans-caption-font);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#exampleFormControlInput1.form-control:focus,
+#exampleFormControlInput2.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+
+
+.submit-button>button{
+    font-family: var(--pt-sans-caption-font);
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #d1512d;
+}
+.field-font{
+    font-family: var(--pt-sans-caption-font);
+    font-size: 16px;
+    font-weight: 400;
+}
+.first-row-paragraph{
+    font-family: var(--pt-sans-caption-font);
+    font-size: 16px;
+    font-weight: 700;
+}
+.visit-button{
+        background-color: #9eb23b;
+        color: white;
+}
+.Delete-button{
+    background-color: #eb1d36;
+    color: white;
+}
+
+.btn.visit-button:hover{
+    background-color:#8a9e23 ;
+    border-color:#6e8018 ;
+    color: white;
+}
+.btn.Delete-button:hover{
+    background-color:#d30820;
+    border-color:#ba081d ;
+    color: white;
+}
+.visit-button.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+color: black;
+border-color: black;
+background-color: transparent;
+}
+.Delete-button.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+color: black;
+border-color: black;
+background-color: transparent;
+}
+.name-label-input{
+    position: relative;
+}
+.error-icon{
+    position: absolute;
+    right: 1%;
+    top: 65%;
+    color: red;
+}
+
+.modal.show .modal-dialog.submit-modal {
+    transform: unset;
+    -webkit-transform: unset;
+    -moz-transform: unset;
+    -ms-transform: unset;
+    -o-transform: unset;
+}
+.modal.fade .modal-dialog.submit-modal {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+} 
+.close-modal.btn-close:focus{
+    box-shadow: unset;
+}
+
+.circle-1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.circle-2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+.circle-3{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+}
+.modal-body>p{
+    font-family: var(--Modal-font);
+    font-size: 21px;
+    font-weight: 400;
+}
+.rule-1>i{
+    color: #BB4120;
+}
+.rule-1{
+    font-family: var(--pt-sans-caption-font);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+@font-face{
+    font-family: pt-sans-caption;
+    src: url(../PageFonts/PT_Sans_Caption/PTSansCaption-Regular.ttf);
+}
+@font-face {
+    font-family:Pacifico;
+    src: url(../PageFonts/Pacifico/Pacifico-Regular.ttf);
+}
+@font-face {
+    font-family: Righteous;
+    src: url(../PageFonts/Righteous/Righteous-Regular.ttf);
+}
+@font-face {
+    font-family: BreeSerif;
+    src: url(../PageFonts/Bree_Serif/BreeSerif-Regular.ttf);
+}
