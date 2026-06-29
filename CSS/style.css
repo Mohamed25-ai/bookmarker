@@ -105,6 +105,14 @@ h1:hover::after{
         background-color: #9eb23b;
         color: white;
 }
+.Edit-button{
+    background-color: rgb(191, 191, 55);
+    color: white;
+}
+.Edit-button:hover{
+    background-color: rgb(112, 112, 84);
+    color: white;
+}
 .Delete-button{
     background-color: #eb1d36;
     color: white;
@@ -161,7 +169,17 @@ background-color: transparent;
 .close-modal.btn-close:focus{
     box-shadow: unset;
 }
+/* .search-input-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10;
+    background-color: #3FA55B;
+}
+#search-input{
 
+} */
 .circle-1{
     width: 20px;
     height: 20px;
