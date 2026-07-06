@@ -183,7 +183,7 @@ function handleSearchUrl() {
   var existedUrls = [];
   var searchValue = searchInput.value.toLowerCase();
   for (let index = 0; index < sitesUrlList.length; index++) {
-    if (sitesUrlList[index].name.toLowerCase().includes(searchValue)) {
+    if (sitesUrlList[index].name.toLowerCase().includes(searchValue.trim().toLowerCase())) {
       existedUrls.push(sitesUrlList[index]);
     }
   }
